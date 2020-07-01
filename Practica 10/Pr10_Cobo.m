@@ -3,8 +3,12 @@ clear; close all; clc;
 load('matricesPr10');
 
 %% 4
-X=[1,0,1;-2,3,1;5,-5,4];
-nnOutput(X,W1,W2)'
+X1=[1;0;1]';
+X2=[-2;3;1]';
+X3=[5;-5;4]';
+XX=[X1;X2;X3];
+%X=[1,0,1;-2,3,1;5,-5,4];
+nnOutput(XX,W1,W2)'
 
 %% 5
 [m,n]=size(X_dig);
